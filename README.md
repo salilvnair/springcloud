@@ -20,3 +20,8 @@ a sample request like below using postman
 
 > 6. goto http://localhost:9411 
 the coupon-service will be visible in the dropdown and we can search for the logs.
+
+
+NOTE: Install mysql db as a dependency and run below script before runnin coupon-service app.
+
+create table coupon (id INT NOT NULL AUTO_INCREMENT, code varchar(100), discount FLOAT(5), exp_date varchar(20), primary key (id));
